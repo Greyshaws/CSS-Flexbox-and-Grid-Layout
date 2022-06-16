@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    font-size: 60px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.flex-container {
+    display: flex;
+    width: 60%;
+    margin: 100px auto;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    padding-bottom: 18px;
+}
+
+.flex-one {
+    width: 33%;
+    background-color: hsl(31, 77%, 52%);
+    padding: 2em;
+}
+
+.flex-two {
+    width: 33%;
+    background-color: hsl(184, 100%, 22%);
+    padding: 2em;
+}
+
+.flex-three {
+    width: 33%;
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+}
+
+.flex-one h1,
+.flex-two h1,
+.flex-three h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    padding-bottom: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.flex-one p,
+.flex-two p,
+.flex-three p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    height: 100px;
+    margin-bottom: 70px;
+}
+
+.flex-one button,
+.flex-two button,
+.flex-three button {
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 20px;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.flex-one button {
+    color: hsl(31, 77%, 52%);
+    background-color: white;
+}
+
+.flex-one button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 100%);
+    border: 2px solid white;
+}
+
+.flex-two button {
+    color: hsl(184, 100%, 22%);
+    background-color: white;
+}
+
+.flex-two button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border: 2px solid white;
+}
+
+.flex-three button {
+    color: hsl(179, 100%, 13%);
+    background-color: white;
+}
+
+.flex-three button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border: 2px solid white;
+}
+
+@media (min-width: 1440px) {
+    .flex-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .flex-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 960px) {
+    .flex-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 840px) {
+    .flex-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .flex-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .flex-one,
+    .flex-two,
+    .flex-three {
+        width: 100%;
+    }
+    .flex-one p,
+    .flex-two p,
+    .flex-three p {
+        height: 70px;
+        margin-bottom: 15px;
+    }
+}
